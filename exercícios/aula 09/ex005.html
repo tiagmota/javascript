@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(69, 0, 158);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id ='msg'>Clique em mim</div>
+    <div id='gsm'>Olha eu Aqui</div> 
+    <div id='ass'>Aprendendo JV e HTML</div>
+    <br>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] //Tenho 2 paragráfos e quero selecionar o primeiro <p>, comeca com [0]
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'red'
+        
+        var corpo = window.document.body
+        corpo.style.background = 'Black'
+        
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        // d.innerHTML = 'Estou Aguardando...'
+
+        var f = window.document.getElementById('gsm')
+        f.innerText = 'Tiago'
+        f.style.background = 'blue'
+
+        var g = window.document.querySelector("div#ass")
+        g.style.color = 'orange'
+       
+
+
+        
+    </script>
+</body>
+</html>

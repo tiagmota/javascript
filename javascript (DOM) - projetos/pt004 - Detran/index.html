@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DETRAN</title>
+
+</head>
+<body>
+    <div class="principal">
+        <h1>DETRAN</h1>
+        <p>Digite sua idade para saber se você está <strong>APTO</strong> ou <strong>NÃO</strong> a tirar a carteira.</p>
+            <label for="data-ano" class="data-ano">Ano Atual (yyyy):</label>
+            <input type="number" name="txt1" id="txt1">
+            <label for="data-nasc" class="data-nasc">Nascimento (yyyy):</label>
+            <input type="number" name="txt2" id="txt2">
+        <input type="button" value="Calcular" onclick="calcular()" class="botão">
+        <div id="res">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

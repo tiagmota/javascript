@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <label for="Início">Início:</label>
+                <input type="number" name="início" id="ini">
+            </div>
+            <div>
+                <label for="Fim">Fim:</label>
+                <input type="number" name="fim" id="fi">
+            </div>  
+            <div>
+                <label for="Passo">Passo:</label>
+                <input type="number" name="passo" id="pass">
+            </div>
+            <input type="button" value="Contar" onclick="contar()" id="button">
+            <div id="res">
+                Preparando a contagem....
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; TiagoMota</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

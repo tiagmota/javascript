@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mensagens</title>
+</head>
+<body>
+    <h1>Desafio das Mensagens</h1>
+    <input type="button" value="Botão 1" id="msg1" onclick="mensagem1()">
+    <input type="button" value="Botão 2" id="msg2" onclick="mensagem2()">
+    <input type="button" value="Botão 3" id="msg3" onclick="mensagem3()">
+
+    <script>
+        var men1 = window.document.getElementById('msg1')
+        var men2 = window.document.getElementById('msg2')
+        var men3 = window.document.getElementById('msg3')
+
+
+        men1.addEventListener('click', clicar1)
+           
+        function clicar1() {
+            window.alert('Você apertou o Botão 1!')
+        }
+
+        men2.addEventListener('click', clicar2)
+
+        function clicar2() {
+            window.alert('Você apertou o Botão 2!')
+        }
+
+        men3.addEventListener('click', clicar3)
+
+        function clicar3() {
+            window.alert('Você apertou o Botão 3!')
+        }
+        
+
+    </script>
+</body>
+</html>
